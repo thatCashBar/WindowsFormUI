@@ -13,6 +13,7 @@ namespace WindowsForm_UI
         private Form currentChildForm;
         private struct RGBColors
         {
+            public static Color childFormIconStartColor = Color.FromArgb(34, 114, 175);
             public static Color color1 = Color.FromArgb(172, 126, 241);
             public static Color color2 = Color.FromArgb(249, 118, 176);
             public static Color color3 = Color.FromArgb(253, 138, 114);
@@ -125,7 +126,7 @@ namespace WindowsForm_UI
             DisableButton();
             leftBorderBtn.Visible = false;
             iconCurrentChildForm.IconChar = IconChar.Home;
-            iconCurrentChildForm.IconColor = Color.MediumPurple;
+            iconCurrentChildForm.IconColor = RGBColors.childFormIconStartColor;
             titleChildForm.Text = "Home";
         }
 
