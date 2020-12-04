@@ -44,7 +44,7 @@ namespace WindowsForm_UI
             this.btnMaximize = new FontAwesome.Sharp.IconButton();
             this.btnClose = new FontAwesome.Sharp.IconButton();
             this.titleChildForm = new System.Windows.Forms.Label();
-            this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
+            this.currentChildFormIcon = new FontAwesome.Sharp.IconPictureBox();
             this.panelShadow = new System.Windows.Forms.Panel();
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -52,7 +52,7 @@ namespace WindowsForm_UI
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
             this.panelTitleBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currentChildFormIcon)).BeginInit();
             this.panelChildForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -232,7 +232,7 @@ namespace WindowsForm_UI
             this.panelTitleBar.Controls.Add(this.btnMaximize);
             this.panelTitleBar.Controls.Add(this.btnClose);
             this.panelTitleBar.Controls.Add(this.titleChildForm);
-            this.panelTitleBar.Controls.Add(this.iconCurrentChildForm);
+            this.panelTitleBar.Controls.Add(this.currentChildFormIcon);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(220, 0);
             this.panelTitleBar.Name = "panelTitleBar";
@@ -292,7 +292,7 @@ namespace WindowsForm_UI
             // 
             this.titleChildForm.AutoSize = true;
             this.titleChildForm.ForeColor = System.Drawing.Color.Gainsboro;
-            this.titleChildForm.Location = new System.Drawing.Point(59, 31);
+            this.titleChildForm.Location = new System.Drawing.Point(67, 36);
             this.titleChildForm.Name = "titleChildForm";
             this.titleChildForm.Size = new System.Drawing.Size(40, 15);
             this.titleChildForm.TabIndex = 1;
@@ -300,16 +300,16 @@ namespace WindowsForm_UI
             // 
             // iconCurrentChildForm
             // 
-            this.iconCurrentChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.iconCurrentChildForm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(114)))), ((int)(((byte)(175)))));
-            this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.iconCurrentChildForm.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(114)))), ((int)(((byte)(175)))));
-            this.iconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconCurrentChildForm.Location = new System.Drawing.Point(20, 22);
-            this.iconCurrentChildForm.Name = "iconCurrentChildForm";
-            this.iconCurrentChildForm.Size = new System.Drawing.Size(32, 32);
-            this.iconCurrentChildForm.TabIndex = 0;
-            this.iconCurrentChildForm.TabStop = false;
+            this.currentChildFormIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.currentChildFormIcon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(114)))), ((int)(((byte)(175)))));
+            this.currentChildFormIcon.IconChar = FontAwesome.Sharp.IconChar.Home;
+            this.currentChildFormIcon.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(114)))), ((int)(((byte)(175)))));
+            this.currentChildFormIcon.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.currentChildFormIcon.Location = new System.Drawing.Point(27, 28);
+            this.currentChildFormIcon.Name = "iconCurrentChildForm";
+            this.currentChildFormIcon.Size = new System.Drawing.Size(32, 32);
+            this.currentChildFormIcon.TabIndex = 0;
+            this.currentChildFormIcon.TabStop = false;
             // 
             // panelShadow
             // 
@@ -357,7 +357,7 @@ namespace WindowsForm_UI
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).EndInit();
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.currentChildFormIcon)).EndInit();
             this.panelChildForm.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -376,7 +376,7 @@ namespace WindowsForm_UI
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.PictureBox btnHome;
         private System.Windows.Forms.Panel panelTitleBar;
-        private FontAwesome.Sharp.IconPictureBox iconCurrentChildForm;
+        private FontAwesome.Sharp.IconPictureBox currentChildFormIcon;
         private System.Windows.Forms.Label titleChildForm;
         private System.Windows.Forms.Panel panelShadow;
         private System.Windows.Forms.Panel panelChildForm;

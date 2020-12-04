@@ -22,6 +22,7 @@ namespace WindowsForm_UI
             public static Color color6 = Color.FromArgb(24, 161, 251);
         }
 
+
         public Form1()
         {
             InitializeComponent();
@@ -105,8 +106,9 @@ namespace WindowsForm_UI
                 leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
                 leftBorderBtn.Visible = true;
                 leftBorderBtn.BringToFront();
-                iconCurrentChildForm.IconChar = currentBtn.IconChar;
-                iconCurrentChildForm.IconColor = color;
+                currentChildFormIcon.IconChar = currentBtn.IconChar;
+                currentChildFormIcon.IconColor = color;
+                titleChildForm.Text = currentBtn.Text;
             }
         }
         private void DisableButton()
@@ -125,8 +127,8 @@ namespace WindowsForm_UI
         {
             DisableButton();
             leftBorderBtn.Visible = false;
-            iconCurrentChildForm.IconChar = IconChar.Home;
-            iconCurrentChildForm.IconColor = RGBColors.childFormIconStartColor;
+            currentChildFormIcon.IconChar = IconChar.Home;
+            currentChildFormIcon.IconColor = RGBColors.childFormIconStartColor;
             titleChildForm.Text = "Home";
         }
 
