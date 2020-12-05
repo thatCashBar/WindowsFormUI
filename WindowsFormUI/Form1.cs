@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
 
-namespace WindowsForm_UI
+namespace WindowsFormUI
 {
     public partial class Form1 : Form
     {

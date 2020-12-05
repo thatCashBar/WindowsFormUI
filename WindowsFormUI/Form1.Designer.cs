@@ -1,5 +1,5 @@
 ﻿
-namespace WindowsForm_UI
+namespace WindowsFormUI
 {
     partial class Form1
     {
