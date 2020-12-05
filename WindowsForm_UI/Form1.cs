@@ -29,15 +29,7 @@ namespace WindowsForm_UI
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7,60);
             panelMenu.Controls.Add(leftBorderBtn);
-            RemoveWindowsHeaderBar();
-        }
-
-        private void RemoveWindowsHeaderBar()
-        {
-            Text = string.Empty;
-            ControlBox = false;
-            DoubleBuffered = true;
-            MaximizedBounds = Screen.FromHandle(Handle).WorkingArea;
+            FormBorderStyle = FormBorderStyle.None;
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -152,7 +144,6 @@ namespace WindowsForm_UI
             }
         }
 
-        // Move Form with Mouse on TitleBar
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]

@@ -298,7 +298,7 @@ namespace WindowsForm_UI
             this.titleChildForm.TabIndex = 1;
             this.titleChildForm.Text = "Home";
             // 
-            // iconCurrentChildForm
+            // currentChildFormIcon
             // 
             this.currentChildFormIcon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
             this.currentChildFormIcon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(114)))), ((int)(((byte)(175)))));
@@ -306,7 +306,7 @@ namespace WindowsForm_UI
             this.currentChildFormIcon.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(114)))), ((int)(((byte)(175)))));
             this.currentChildFormIcon.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.currentChildFormIcon.Location = new System.Drawing.Point(27, 28);
-            this.currentChildFormIcon.Name = "iconCurrentChildForm";
+            this.currentChildFormIcon.Name = "currentChildFormIcon";
             this.currentChildFormIcon.Size = new System.Drawing.Size(32, 32);
             this.currentChildFormIcon.TabIndex = 0;
             this.currentChildFormIcon.TabStop = false;
@@ -351,7 +351,7 @@ namespace WindowsForm_UI
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "UI Example";
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).EndInit();
